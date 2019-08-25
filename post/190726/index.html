@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>安装程序脚本 静默安装 &middot; 竹杖芒鞋</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="%27linuxtecoin.github.io%27css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="%27linuxtecoin.github.io%27css/poole.css">
+  <link type="text/css" rel="stylesheet" href="%27linuxtecoin.github.io%27css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="%27linuxtecoin.github.io%27css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="%27linuxtecoin.github.io%27"><h1>竹杖芒鞋</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="%27linuxtecoin.github.io%27">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>安装程序脚本 静默安装</h1>
+  <time datetime=2019-07-26T23:00:57&#43;0800 class="post-date">Fri, Jul 26, 2019</time>
+  <p>碰到多台电脑需要安装相同驱动与软件时，可选择将所有软件拷贝到同一文件夹中。</p>
+
+<p>建立txt文件</p>
+
+<p>内容为</p>
+
+<p>@echo off</p>
+
+<p>start /wait 软件名.exe</p>
+
+<p>start /wait 软件名.exe</p>
+
+<p>pause</p>
+
+<p>rem</p>
+
+<p>&hellip;</p>
+
+<p>等</p>
+
+<p>完成后，文件另存为bat（或直接更改扩展名）</p>
+
+<p>统一copy到电脑后运行 bat脚本便可</p>
+
+<p>静默安装也可称为无人值守安装，<br />
+指的是安装时无需任何用户干预，<br />
+直接按默认设置安装，<br />
+我们在安装一些程序的时候一直要点击下一步，<br />
+其实想要免除这些麻烦，直接静默安装就可以了。</p>
+
+<p>常用软件静默安装参数</p>
+
+<p>7-ZIP.exe /S</p>
+
+<p>WinRAR.exe /S</p>
+
+<p>迅雷 /S</p>
+
+<p>金山词霸 /S</p>
+
+<p>百度云 /S</p>
+
+<p>QQ /S</p>
+
+<p>微信 /S</p>
+
+<p>有道词典 /S</p>
+
+<p>360驱动大师（装机版） /q</p>
+
+<p>驱动精灵（装机版） -a</p>
+
+<p>万能驱动 /fa /c</p>
+
+<p>IT天空VC++ /Q</p>
+
+<p>IT天空.NET /Q</p>
+
+<p>微软VC++ /S 或者 /Q</p>
+
+<p>微软.NET /S 或者 /Q</p>
+
+<p>Google拼音 /S</p>
+
+<p>搜狗输入法 /S</p>
+
+<p>酷狗音乐 /S</p>
+
+<p>驱动精灵 /S</p>
+
+<p>CPU-Z /S</p>
+
+<p>小马激活工具 静默参数 /a /acer /random /protect</p>
+
+<p>举例静默安装7zip</p>
+
+<p>新建txt文本，内容如下</p>
+
+<p>@echo off</p>
+
+<p>start /wait 7Zip.exe /S</p>
+
+<p>pause</p>
+
+<p>rem</p>
+
+<p>另存为扩展名bat。右键运行</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

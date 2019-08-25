@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>hugo博客记录 &middot; 竹杖芒鞋</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="%27linuxtecoin.github.io%27css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="%27linuxtecoin.github.io%27css/poole.css">
+  <link type="text/css" rel="stylesheet" href="%27linuxtecoin.github.io%27css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="%27linuxtecoin.github.io%27css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="%27linuxtecoin.github.io%27"><h1>竹杖芒鞋</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="%27linuxtecoin.github.io%27">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>hugo博客记录</h1>
+  <time datetime=2019-07-23T23:23:21&#43;0800 class="post-date">Tue, Jul 23, 2019</time>
+  
+
+<h1 id="hugo-搭建记录">Hugo 搭建记录</h1>
+
+<h4 id="前方操作请参照">前方操作请参照</h4>
+
+<h4 id="hugo-中文文档">Hugo 中文文档</h4>
+
+<h4 id="https-www-gohugo-org"><a href="https://www.gohugo.org/">https://www.gohugo.org/</a></h4>
+
+<h4 id="很详细但最后">很详细但最后</h4>
+
+<blockquote>
+<p>cd public</p>
+
+<p>git init</p>
+
+<p>git remote add origin</p>
+
+<p>git add -A</p>
+
+<p>git commit -m &ldquo;first commit&rdquo;</p>
+
+<p>git push -u origin master</p>
+</blockquote>
+
+<h4 id="看着就懵了-如果没有git基础的话">看着就懵了。 如果没有git基础的话</h4>
+
+<h4 id="从第一步开始">从第一步开始。</h4>
+
+<h4 id="先按照文档搭建-直到本地预览成功">先按照文档搭建，直到本地预览成功</h4>
+
+<h3 id="然后">然后</h3>
+
+<blockquote>
+<p>hugo - -theme=主题名 - -baseUrl=&lsquo;仓库名即Github博客名&rsquo; &ndash;buildDrafts</p>
+</blockquote>
+
+<h4 id="这一步会生成-publice-文件夹">这一步会生成 publice 文件夹</h4>
+
+<h4 id="进入文件夹">进入文件夹</h4>
+
+<blockquote>
+<p>cd public</p>
+
+<h4 id="剩下的严格按照文档操作即可">剩下的严格按照文档操作即可</h4>
+
+<p>git init 　　　 #创建仓库</p>
+
+<p>git add .  　　 #需要提交的代码从工作区添加到暂存区</p>
+
+<p>git commit -m &lsquo;这里是提交的备注&rsquo;</p>
+
+<p>git remote add origin 仓库完整地址从<a href="http://github.com开始直到.io并后面跟.git">http://github.com开始直到.io并后面跟.git</a></p>
+</blockquote>
+
+<h4 id="注意第二次及以后推送会产生">注意第二次及以后推送会产生</h4>
+
+<h4 id="fatal-remote-origin-already-exists">fatal: remote origin already exists.</h4>
+
+<h4 id="需要先删除之前的-origin-可以继续操作">需要先删除之前的 origin 可以继续操作</h4>
+
+<h4 id="删除命令">删除命令</h4>
+
+<blockquote>
+<p>git remote rm origin</p>
+</blockquote>
+
+<h4 id="然后继续上传">然后继续上传</h4>
+
+<h4 id="最后-推送到github">最后，推送到github</h4>
+
+<blockquote>
+<p>git push</p>
+</blockquote>
+
+<h4 id="等待推送成功-如果推送失败则使用">等待推送成功，如果推送失败则使用</h4>
+
+<blockquote>
+<p>git push -u origin master</p>
+
+<h4 id="会提示登录用户名与密码-登陆后会推送成功">会提示登录用户名与密码，登陆后会推送成功</h4>
+</blockquote>
+
+<h3 id="现在打开你的github-io便可以看到你的blog">现在打开你的github.io便可以看到你的Blog。</h3>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

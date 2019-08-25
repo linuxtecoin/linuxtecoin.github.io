@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>nssm生成系统服务 &middot; 竹杖芒鞋</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="%27linuxtecoin.github.io%27css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="%27linuxtecoin.github.io%27css/poole.css">
+  <link type="text/css" rel="stylesheet" href="%27linuxtecoin.github.io%27css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="%27linuxtecoin.github.io%27css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="%27linuxtecoin.github.io%27"><h1>竹杖芒鞋</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="%27linuxtecoin.github.io%27">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>nssm生成系统服务</h1>
+  <time datetime=2019-08-25T22:49:18&#43;0800 class="post-date">Sun, Aug 25, 2019</time>
+  
+
+<h3 id="nssm生成服务">nssm生成服务</h3>
+
+<p>nssm可以将Nodejs项目生成Windows系统服务。<br />
+下载对应nssm版本（32/64）放到将生成服务的项目文件夹中<br />
+在项目文件夹中打开shell<br />
+输入
+&gt;nssm install [项目名称]
+弹出nssm界面<br />
+&gt;pash: 选择项目.exe<br />
+&gt;Startup direcotry: 默认选择项目目录<br />
+&gt;Arguments: 启动参数<br />
+点击 Install service 生成服务<br />
+&gt;net start [项目名称]
+启动服务
+也可以右键计算机管理&ndash;服务和应用程序&ndash;服务<br />
+nssm常用命令<br />
+nssm install servername //创建服务<br />
+nssm start servername //启动服务<br />
+nssm stop servername //暂停服务<br />
+nssm restart servername //重新启动服务<br />
+nssm remove servername //删除创建的服务</p>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 竹杖芒鞋</title>
+    <link>&#39;linuxtecoin.github.io&#39;/post/</link>
+    <description>Recent content in Posts on 竹杖芒鞋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 25 Aug 2019 22:49:18 +0800</lastBuildDate>
+    
+	<atom:link href="'linuxtecoin.github.io'/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>nssm生成系统服务</title>
+      <link>&#39;linuxtecoin.github.io&#39;/post/19081901/</link>
+      <pubDate>Sun, 25 Aug 2019 22:49:18 +0800</pubDate>
+      
+      <guid>&#39;linuxtecoin.github.io&#39;/post/19081901/</guid>
+      <description>nssm生成服务 nssm可以将Nodejs项目生成Windows系统服务。
+下载对应nssm版本（32/64）放到将生成服务的项目文件夹中
+在项目文件夹中打开shell
+输入 &amp;gt;nssm install [项目名称] 弹出nssm界面
+&amp;gt;pash: 选择项目.exe
+&amp;gt;Startup direcotry: 默认选择项目目录
+&amp;gt;Arguments: 启动参数
+点击 Install service 生成服务
+&amp;gt;net start [项目名称] 启动服务 也可以右键计算机管理&amp;ndash;服务和应用程序&amp;ndash;服务
+nssm常用命令
+nssm install servername //创建服务
+nssm start servername //启动服务
+nssm stop servername //暂停服务
+nssm restart servername //重新启动服务
+nssm remove servername //删除创建的服务</description>
+    </item>
+    
+    <item>
+      <title>cmd查询内容另存为txt脚本</title>
+      <link>&#39;linuxtecoin.github.io&#39;/post/190729/</link>
+      <pubDate>Mon, 29 Jul 2019 22:45:04 +0800</pubDate>
+      
+      <guid>&#39;linuxtecoin.github.io&#39;/post/190729/</guid>
+      <description>经常需要同事查看其它电脑mac地址或IP地址的情况
+如果是接受过it类培训还好
+但很多情况下是前台，财务或保洁
+开启远程工作量太大
+不如写个脚本发过去
+直接让同事双击打开
+新建txt 编辑内容如下 &amp;gt;systeminfo &amp;gt;&amp;gt; D:\systeminfo .txt 保存
+重命名扩展名bat
+便是将系统信息（systeminfo）
+保存到 D 盘 下 systeminfo.txt 里
+打开一看便知。</description>
+    </item>
+    
+    <item>
+      <title>安装程序脚本 静默安装</title>
+      <link>&#39;linuxtecoin.github.io&#39;/post/190726/</link>
+      <pubDate>Fri, 26 Jul 2019 23:00:57 +0800</pubDate>
+      
+      <guid>&#39;linuxtecoin.github.io&#39;/post/190726/</guid>
+      <description>碰到多台电脑需要安装相同驱动与软件时，可选择将所有软件拷贝到同一文件夹中。
+建立txt文件
+内容为
+@echo off
+start /wait 软件名.exe
+start /wait 软件名.exe
+pause
+rem
+&amp;hellip;
+等
+完成后，文件另存为bat（或直接更改扩展名）
+统一copy到电脑后运行 bat脚本便可
+静默安装也可称为无人值守安装，
+指的是安装时无需任何用户干预，
+直接按默认设置安装，
+我们在安装一些程序的时候一直要点击下一步，
+其实想要免除这些麻烦，直接静默安装就可以了。
+常用软件静默安装参数
+7-ZIP.exe /S
+WinRAR.exe /S
+迅雷 /S
+金山词霸 /S
+百度云 /S
+QQ /S
+微信 /S
+有道词典 /S
+360驱动大师（装机版） /q
+驱动精灵（装机版） -a
+万能驱动 /fa /c
+IT天空VC++ /Q
+IT天空.NET /Q
+微软VC++ /S 或者 /Q
+微软.NET /S 或者 /Q
+Google拼音 /S
+搜狗输入法 /S
+酷狗音乐 /S
+驱动精灵 /S
+CPU-Z /S
+小马激活工具 静默参数 /a /acer /random /protect</description>
+    </item>
+    
+    <item>
+      <title>hugo博客记录</title>
+      <link>&#39;linuxtecoin.github.io&#39;/post/190723/</link>
+      <pubDate>Tue, 23 Jul 2019 23:23:21 +0800</pubDate>
+      
+      <guid>&#39;linuxtecoin.github.io&#39;/post/190723/</guid>
+      <description>Hugo 搭建记录 前方操作请参照 Hugo 中文文档 https://www.gohugo.org/ 很详细但最后  cd public
+git init
+git remote add origin
+git add -A
+git commit -m &amp;ldquo;first commit&amp;rdquo;
+git push -u origin master
+ 看着就懵了。 如果没有git基础的话 从第一步开始。 先按照文档搭建，直到本地预览成功 然后  hugo - -theme=主题名 - -baseUrl=&amp;lsquo;仓库名即Github博客名&amp;rsquo; &amp;ndash;buildDrafts
+ 这一步会生成 publice 文件夹 进入文件夹  cd public
+剩下的严格按照文档操作即可 git init #创建仓库
+git add . #需要提交的代码从工作区添加到暂存区
+git commit -m &amp;lsquo;这里是提交的备注&amp;rsquo;
+git remote add origin 仓库完整地址从http://github.com开始直到.io并后面跟.git
+ 注意第二次及以后推送会产生 fatal: remote origin already exists.</description>
+    </item>
+    
+    <item>
+      <title>忆王孙·夏词</title>
+      <link>&#39;linuxtecoin.github.io&#39;/post/19072301/</link>
+      <pubDate>Tue, 23 Jul 2019 23:16:05 +0800</pubDate>
+      
+      <guid>&#39;linuxtecoin.github.io&#39;/post/19072301/</guid>
+      <description>忆王孙·夏词 　宋 李重元
+风蒲猎猎小池塘。
+过雨荷花满院香。
+沈李浮瓜冰雪凉。
+竹方床。
+针线慵拈午梦长。</description>
+    </item>
+    
+    <item>
+      <title>0号文件</title>
+      <link>&#39;linuxtecoin.github.io&#39;/post/blog/</link>
+      <pubDate>Tue, 23 Jul 2019 22:17:15 +0800</pubDate>
+      
+      <guid>&#39;linuxtecoin.github.io&#39;/post/blog/</guid>
+      <description>https://www.bilibili.com/video/av51574688?from=search&amp;amp;seid=6337778280601528183</description>
+    </item>
+    
+  </channel>
+</rss>
